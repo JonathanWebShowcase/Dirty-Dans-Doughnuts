@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Css/Reusable.css">
+    <link rel="stylesheet" href="../Css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <nav id="nav-flex">
+        <section class="logoGraphic">
+            <a href="MainPage.html"><img id="logo" src="../Graphics/Transparent-Logo.gif" alt="Logo"></a>
+        </section>
+        <ul id="links-flex">
+            <li class="link"><a href="AboutUs.html">About Us</a></li>
+            <li class="link"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="link"><a href="LogIn.html">Log In</a></li>
+            <li class="link"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+        <button id="ButContainerNav"><img id="ButContainerNavImg"src="../Graphics/doughnut.png" alt=""></button>
+    </nav>
+    <section id="BurgerMenu" class="HamborgorOFF">
+        <ul>
+            <li class="hamborgerItem"><button id="ButContainer"><img src="../Graphics/doughnut.png" alt=""></button></li>
+            <li class="hamborgerItem"><a href="AboutUs.html">About Us</a></li>
+            <li class="hamborgerItem"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="hamborgerItem"><a href="LogIn.html">Log In</a></li>
+            <li class="hamborgerItem"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </section>
+
+    <section class="LoginContainer">
+        <h1 id="welcome">Welcome!</h1>
+        <form action="" id="LoginForm">
+            <section class="LonInSections">
+                <label for="username">Username</label><br>
+                    <input type="text" id="username">
+            </section>
+            <section class="LonInSections">
+                <label for="password">Password</label><br>
+                    <input type="password" id="password">
+            </section>
+            <section id="MsgText" class="HideMsg">
+                <ul>
+                    <li id="Messege"></li>
+                </ul>
+            </section>
+            <section class="Button">
+                <a href="SignUp.html">New To Dan's?</a>
+                <input id ="logIn" type="submit" value="Log In">
+            </section>
+        </form>
+    </section>
+
+
+    <footer id="footer">
+        <ul class="footerItem">
+             <li><h1>Our Info</h1></li>
+             <li class="listItem" >Twitter</li>
+             <li class="listItem" >Instagram</li>
+             <li class="listItem" >Facebook</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Make Money With Us</h1></li>
+             <li class="listItem" >Career Opportunities</li>
+             <li class="listItem" >Doughnut Blacksmith</li>
+             <li class="listItem" >Delivery Driving</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Let Us Help You</h1></li>
+             <li class="listItem" >Contact One</li>
+             <li class="listItem" >Contact Two</li>
+             <li class="listItem" >Contact Three</li>
+        </ul>
+     </footer>
+     <script src="../JavaScript/behavior.js"></script>
+     <script src="../JavaScript/DataBase.js"></script>
+     <script src="../JavaScript/LoginValidation.js"></script>
+</body>
+</html>

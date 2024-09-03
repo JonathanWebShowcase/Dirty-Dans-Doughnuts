@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Css/Reusable.css">
+    <link rel="stylesheet" href="../Css/OrderNow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+</head>
+<body>
+    <nav id="nav-flex">
+        <section class="logoGraphic">
+            <a href="MainPage.html"><img id="logo" src="../Graphics/Transparent-Logo.gif" alt="Logo"></a>
+        </section>
+        <ul id="links-flex">
+            <li class="link"><a href="AboutUs.html">About Us</a></li>
+            <li class="link"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="link"><a href="LogIn.html">Log In</a></li>
+            <li class="link"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+        <button id="ButContainerNav"><img id="ButContainerNavImg"src="../Graphics/doughnut.png" alt=""></button>
+    </nav>
+    <section id="BurgerMenu" class="HamborgorOFF">
+        <ul>
+            <li class="hamborgerItem"><button id="ButContainer"><img src="../Graphics/doughnut.png" alt=""></button></li>
+            <li class="hamborgerItem"><a href="AboutUs.html">About Us</a></li>
+            <li class="hamborgerItem"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="hamborgerItem"><a href="LogIn.html">Log In</a></li>
+            <li class="hamborgerItem"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </section>
+
+    <section id="OrderFormContainer">
+        <h1 id="WelcomForm" class="CustomerMSG">Welcome Customer</h1>
+        <form action="" id="OrderNow">
+            <section class="OrderFormItem">
+                <label for="FirstName">First Name</label>
+                <input type="text" name="" id="FirstNameOrder">
+            </section>
+            <section class="OrderFormItem">
+                <label for="LastNameOrder">Last Name</label>
+                <input type="text" name="" id="LastNameOrder">
+            </section>
+            <h1 id="WelcomForm">Select Your Platter Size</h1>
+            <section id="PlatterSizeContainer">
+                <label class="OrderCardContainer" for="peasent">
+                    <input type="radio" name="PlatterSize" id="peasent" value="peasent">
+                    <section class="OrderCardImg"><img class="ImgCard" src="../Graphics/PEASENT.jpg" alt=""></section>
+                    <h1 class="PlatterText">Peasant - 24</h1>
+                    <p class="PlatterText">Plater designed for the lower class</p>
+                </label>
+                <label class="OrderCardContainer"  for="noble">
+                    <input type="radio" name="PlatterSize" id="noble" value="noble">
+                    <section class="OrderCardImg"><img class="ImgCard" src="../Graphics/NOBLE (1).jpg" alt=""></section>
+                    <h1 class="PlatterText">Noble - 60</h1>
+                    <p class="PlatterText">Platter designed for the noble and the righteous</p>
+                </label>
+                <label class="OrderCardContainer"  for="king">
+                    <input type="radio" name="PlatterSize" id="king" value="king">
+                    <section class="OrderCardImg"><img class="ImgCard" src="../Graphics/KING.png" alt=""></section>
+                    <h1 class="PlatterText">King - 120</h1>
+                    <p class="PlatterText">Plater for the one who rules above all</p>
+                </label>
+            </section>
+            <h1 id="WelcomForm">Select Your Flavors</h1>
+            <h3 id="PlatterErrorMsg">You Have This Many Dougnuts left</h3>
+            <section id="FlavorSelectorContainer">
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/ChocoDough.webp" alt=""></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Deep Fudge - $3.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input disabled ="number" placeholder="0" class="InputField" id="DeepFudge"></section>
+                    <button class="left-button" id="fudgeLeft">-</button>
+                    <button class="right-button" id="fudgeRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/AppleFritterDough (1).jpg" alt="" ></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Apple Fritter - $4.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="AppleFrit"></section>
+                    <button class="left-button" id="appleLeft">-</button>
+                    <button class="right-button" id="appleRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/CustardDough.jpg" alt=""></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Custard Doughnut - $1.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="Custard"></section>
+                    <button class="left-button" id="custardLeft">-</button>
+                    <button class="right-button" id="custardRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/JellyDough.jpg"></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Jelly Doughnut - $1.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="Jelly"></section>
+                    <button class="left-button" id="jellyLeft">-</button>
+                    <button class="right-button" id="jellyRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/SprinkleDough (1).jpg" alt=""></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Sprinkle Doughnut - $2.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="Sprinkle"></section>
+                    <button class="left-button" id="sprinkleLeft">-</button>
+                    <button class="right-button" id="sprinkleRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/BeignetsDough.jpg" alt=""></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Beignets - $ 5.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="Beignets"></section>
+                    <button class="left-button" id="beignetsLeft">-</button>
+                    <button class="right-button" id="beignetsRight">+</button>
+                </section>
+                <section class="FlavorItem">
+                    <section class="FlavorImgContainer"><img class="FlavorImg" src="../Graphics/glazed-doughnuts-homemade-4 (1).jpg" alt=""></section>
+                    <section class="FlavorTextContainer">
+                        <h1>Glazed Doughnut - $1.99</h1>
+                    </section>
+                    <section class="FlavorInput"><input type="number" placeholder="0" class="InputField" id="Glaze"></section>
+                    <button class="left-button" id="glazedLeft">-</button>
+                    <button class="right-button" id="glazedRight">+</button>
+                </section> 
+            </section>
+            <section id="SubmutContainer">
+                <input id="Submut" type="submit" value="Order Now">
+            </section>
+        </form>
+    </section>
+    <section id="AddReceipt">
+    </section>
+
+
+    <footer id="footer">
+        <ul class="footerItem">
+             <li><h1>Our Info</h1></li>
+             <li class="listItem" >Twitter</li>
+             <li class="listItem" >Instagram</li>
+             <li class="listItem" >Facebook</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Make Money With Us</h1></li>
+             <li class="listItem" >Career Opportunities</li>
+             <li class="listItem" >Doughnut Blacksmith</li>
+             <li class="listItem" >Delivery Driving</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Let Us Help You</h1></li>
+             <li class="listItem" >Contact One</li>
+             <li class="listItem" >Contact Two</li>
+             <li class="listItem" >Contact Three</li>
+        </ul>
+     </footer>
+     <script src="../JavaScript/behavior.js"></script>
+     <script src="../JavaScript/DataBase.js"></script>
+     <script src="../JavaScript/OrderNow.js"></script>
+</body>
+</html>

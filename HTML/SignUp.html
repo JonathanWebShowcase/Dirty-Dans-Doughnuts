@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Css/Reusable.css">
+    <link rel="stylesheet" href="../Css/SignUp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <nav id="nav-flex">
+        <section class="logoGraphic">
+            <a href="MainPage.html"><img id="logo" src="../Graphics/Transparent-Logo.gif" alt="Logo"></a>
+        </section>
+        <ul id="links-flex">
+            <li class="link"><a href="AboutUs.html">About Us</a></li>
+            <li class="link"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="link"><a href="LogIn.html">Log In</a></li>
+            <li class="link"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+        <button id="ButContainerNav"><img id="ButContainerNavImg"src="../Graphics/doughnut.png" alt=""></button>
+    </nav>
+    <section id="BurgerMenu" class="HamborgorOFF">
+        <ul>
+            <li class="hamborgerItem"><button id="ButContainer"><img src="../Graphics/doughnut.png" alt=""></button></li>
+            <li class="hamborgerItem"><a href="AboutUs.html">About Us</a></li>
+            <li class="hamborgerItem"><a href="OrderNow.html">OrderNow</a></li>
+            <li class="hamborgerItem"><a href="LogIn.html">Log In</a></li>
+            <li class="hamborgerItem"><a href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </section>
+
+    <section class="SignUpContainer">
+        <h1 id="SignUpWelcome">Welcome New Customer!</h1>
+        <form action="" id="SignUp">
+            <section class="SingUpItem">
+                <label for="FirstName">First Name</label><br>
+                <input type="text" name="" id="FirstName">
+            </section>
+            <section id="firstNameRules" class="firstNameRulesOFF">
+                <ul class="Rules">
+                    <li class="firstNameRules">Longer than 3 Characters</li>
+                    <li class="firstNameRules">Shorter Than 20 Characters</li>
+                    <li class="firstNameRules">Must Not Contain Symbols</li>
+                    <li class="firstNameRules">Must Not Contain Numbers</li>
+                </ul>
+            </section>
+            <section class="SingUpItem">
+                <label for="LastName">Last Name</label><br>
+                <input type="text" name="" id="LastName">
+            </section>
+            <section id="lastNameRules" class="lastNameRulesOFF">
+                <ul class="Rules">
+                    <li class="lastNameRules">Longer Than 3 Characters</li>
+                    <li class="lastNameRules">Shorter Than 20 Characters</li>
+                    <li class="lastNameRules">Must Not Contain Symbols</li>
+                    <li class="lastNameRules">Must Not Contain Numbers</li>
+                </ul>
+            </section>
+            <section class="SingUpItem">
+                <label for="UserName">User Name</label><br>
+                <input type="text" name="" id="UserName">
+            </section>
+            <section id="DoesUserExist" class="userNameRulesOFF">
+                <p id="UserMSG">WHy this no show</p>
+            </section>
+            <section id="userNameRules" class="userNameRulesOFF">
+                <ul class="Rules">
+                    <li class="userNameRules">Longer Than 5 Characters</li>
+                    <li class="userNameRules">Shorter Than 15 Characters</li>
+                    <li class="userNameRules">Must Contain Numbers</li>
+                    <li class="userNameRules">Must Not Contain Symbols</li>
+                </ul>
+            </section>
+            <section class="SingUpItem">
+                <label for="Password">Password</label><br>
+                <input type="password" name="" id="Password">
+            </section>
+            <section id="passwordRules" class="passwordRulesOFF">
+                <ul class="Rules">
+                    <li class="passwordRules">Must Be At Least 6 Characters</li>
+                    <li class="passwordRules">Must Contain Upper Case Letters</li>
+                    <li class="passwordRules">Must Contain Lower Case Letters</li>
+                    <li class="passwordRules">Must Contain Numbers</li>
+                    <li class="passwordRules">Must Contain Symbols</li>
+                </ul>
+            </section>
+            <section class="SingUpItem">
+                <label for="ConfirmPassword">Confirm Password</label><br>
+                <input type="password" name="" id="ConfirmPassword">
+            </section>
+            <section id="passwordConfirmRules" class="passwordConfirmRulesOFF">
+                <ul class="Rules">
+                    <li class="passwordConfirmRules">Passwords Do Not Match</li>
+                </ul>
+            </section>
+            <section id="FinalMess" class="">
+                <p id="MsgForEnd"></p>
+            </section>
+            <section class="SingUpItem" id="SignUpButtonContainer">
+                <input id="SignUpButt" type="submit" value="Sign Up">
+            </section>
+            <a href="LogIn.html">Already A Dirty Dan Lover?</a>
+        </form>
+        <section class="SignUpLogocontainer">
+        </section>
+    </section>
+
+
+    
+
+    <footer id="footer">
+        <ul class="footerItem">
+             <li><h1>Our Info</h1></li>
+             <li class="listItem" >Twitter</li>
+             <li class="listItem" >Instagram</li>
+             <li class="listItem" >Facebook</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Make Money With Us</h1></li>
+             <li class="listItem" >Career Opportunities</li>
+             <li class="listItem" >Doughnut Blacksmith</li>
+             <li class="listItem" >Delivery Driving</li>
+        </ul>
+        <ul class="footerItem">
+             <li><h1>Let Us Help You</h1></li>
+             <li class="listItem" >Contact One</li>
+             <li class="listItem" >Contact Two</li>
+             <li class="listItem" >Contact Three</li>
+        </ul>
+     </footer>
+     <script src="../JavaScript/behavior.js"></script>
+     <script src="../JavaScript/DataBase.js"></script>
+     <script src="../JavaScript/SignUpValidation.js"></script>
+</body>
+</html>
