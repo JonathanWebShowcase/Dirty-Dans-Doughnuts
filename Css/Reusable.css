@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
+*{
+    margin:0;
+    border-style: border-box;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+        /*Background*/
+
+        
+body{
+    background-image: url(../Graphics/Bakcground.jpg);
+    background-size: contain;
+}
+
+
+        /*Nav Bar*/
+a:visited{
+    color:black
+}
+a{
+    text-decoration: none;
+}
+
+#logo
+{
+    width: 100%;
+    height: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#MainGraphic{
+    width: 100%;
+    height: auto;
+}
+#nav-flex{
+    justify-content: space-between;
+    display:flex;
+    background-color: #191B6C;
+    box-shadow: 5px 10px 18px #888888;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+.logoGraphic{
+    width:11%;
+}
+#links-flex{
+    list-style-type: none;
+    width:30%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    flex-grow: 0;
+
+}
+.link{
+    text-align: center;
+    padding:2.5%;
+    width:40%;
+    text-wrap:balance;
+}
+.link a{
+    color:white;
+    width:100%
+}
+.link:hover{
+    border-bottom:5px solid white;
+}
+
+
+        /*Footer Styling*/
+
+
+#footer{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(35, 35, 35);
+    color:beige;
+    padding-left:auto;
+    padding-right:auto;
+    padding-bottom:1%;
+}
+.footerItem{
+    list-style-type: none;
+    padding:3%;
+    font-size: 100%;;
+}
+.footerItem h1{
+    border-bottom:3px solid white;
+}
+.listItem{
+    margin-top:3%;
+}
+
+        /*Hamborger*/
+.HamborgorOFF{
+    display:none;
+}
+#ButContainerNav{
+    display:none;
+}
+#ButContainerNavImg{
+    display:none;
+}
+.hamborgerItem{
+    display:none;
+}
+
+
+
+        /*Adding Media Queries*/
+@media screen and (max-width: 650px) {
+
+    *{
+        font-size: 95%;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #links-flex{
+        display:none;
+    }
+    .logoGraphic{
+        margin-right:20%;
+        width:20%;
+    }
+    footer{
+        margin-top: auto;;
+    }
+
+
+
+           /*Hamborger*/
+    #ButContainerNav{
+        display:block;
+    }
+    #ButContainerNavImg{
+        display:block;
+    }
+    .hamborgerItem{
+        display:block;
+    }
+    #nav-flex{
+        justify-content: end;
+    }
+    #ButContainerNav{
+        width:20%;
+        background-color: transparent;
+        border:none;
+    }
+    #ButContainerNav img{
+        width:100%;
+    }
+    .HamborgorON{
+        display:block;
+        background-image: linear-gradient(90deg, #F5BCEA 10%, #f67665 90%, #dbdddd 100%);
+        width:40%;
+        height:100%;
+        position:fixed;
+        top:0;
+        right:0;
+        font-size: 4rem;
+        z-index:2;
+    }
+    .HamborgorON ul{
+        list-style-type: none;
+    }
+    .hamborgerItem{
+        width:100%;
+        border-bottom:3px solid white;
+        text-align: center;
+        overflow: hidden;;
+    }
+    .hamborgerItem a{
+        color:white;
+        width:100%;
+        font-size:30%;
+
+    }
+    .HamborgorOFF{
+        display:none;
+    }
+    #ButContainer{
+        width:50%;
+        background-color: transparent;
+        border:none;
+    }
+    #ButContainer img{
+        width:100%;
+    }
+
+
+
+
+}
+@media screen and (max-width: 440px){
+    *{
+        font-size: 94%;;
+    }
+}

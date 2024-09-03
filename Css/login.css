@@ -1,0 +1,87 @@
+.LoginContainer{
+    background-color: aliceblue;
+
+    width:70%;
+    border-radius: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4%;
+    margin-bottom: 20%;;
+    padding: 10%;
+    box-shadow: 5px 10px 18px #888888;
+    position:relative;
+    font-size: 90%;;
+}
+input{
+    border-radius: 30px;
+    width:90%;
+    padding:1.5%;
+    box-shadow: 5px 10px 18px #888888;
+    outline: none;
+    text-align: center;
+    border:none;
+}
+label{
+    margin-bottom:2%;
+}
+input:focus{
+    border: 1px solid orange;
+}
+.LonInSections{
+    padding:1%;
+
+    width:100%;
+    margin-bottom:5%;
+}
+
+#welcome{
+    text-align: center;
+    margin-bottom:2%;
+}
+
+#logIn{
+    position:absolute;
+    margin-top: 1%;;
+    bottom:6%;
+    right:5%;
+    width:20%;
+    background-color: #f67665;;
+    color:aliceblue;
+    border:none;
+}
+#logIn:hover{
+    background-color: #8d2f22;
+}
+
+/* Validation */
+
+
+#MsgText{
+    width:50%;
+    margin-left:6%;
+    margin-bottom:4%;
+}
+
+.HideMsg{
+    display:none;
+}
+.showMsg{
+    display:block;
+}
+
+.Valid{
+    color:rgb(90, 197, 90)
+}
+.InValid{
+    color:crimson
+}
+
+.InputValid{
+    background-color:rgb(90, 197, 90);
+    border: green solid 1px;
+
+}
+.InputInValid{
+    background-color:crimson ;
+    border: #8d2f22 1px solid;
+}
